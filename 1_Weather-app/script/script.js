@@ -16,7 +16,7 @@ async function checkWeather(city) {
     Math.floor(data.main.temp) + "°C";
   document.querySelector(".city_name").innerHTML = data.name;
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-  document.querySelector(".wind").innerHTML = data.main.speed + "/kph";
+  document.querySelector(".wind").innerHTML = data.wind.speed + "/kph";
   let weather = data.weather[0].main;
   if (weather == "Smoke") {
     weatherIcon.src = "images/drizzle.png";
