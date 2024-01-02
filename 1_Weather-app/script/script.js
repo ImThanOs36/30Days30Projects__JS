@@ -6,7 +6,7 @@ let errorMessage = document.querySelector(".error_message");
 async function checkWeather(city) {
   let response = await fetch(URL + city + `&appid=${apiKey}` + "&units=metric");
   let data = await response.json();
-  if (response.status == 404) {
+  if (response.status == 404 || response.status==400) {
     errorMessage.style.visibility = "visible";
   } else {
     errorMessage.style.visibility = "hidden";
