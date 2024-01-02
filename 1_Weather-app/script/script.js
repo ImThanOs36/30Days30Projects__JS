@@ -6,7 +6,7 @@ let errorMessage = document.querySelector(".error_message");
 async function checkWeather(city) {
   let response = await fetch(URL + city + `&appid=${apiKey}` + "&units=metric");
   let data = await response.json();
-  if (response.status == 404 || response.status==400) {
+  if (response.status == 404 || response.status == 400) {
     errorMessage.style.visibility = "visible";
   } else {
     errorMessage.style.visibility = "hidden";
@@ -24,8 +24,15 @@ async function checkWeather(city) {
     weatherIcon.src = "images/clear.png";
   } else if (weather == "Clouds") {
     weatherIcon.src = "images/clouds.png";
+  } else if (weather == "Rain") {
+    weatherIcon.src = "images/rain.png";
+  } else if (weather == "Drizzle") {
+    weatherIcon.src = "images/drizzle.png";
+  } else if (weather == "Snow") {
+    weatherIcon.src = "images/snow.png";
+  } else {
+    weatherIcon.src = "images/mist.png";
   }
-
   document.querySelector(".weather").style.display = "block";
 }
 
