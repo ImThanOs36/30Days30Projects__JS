@@ -1,85 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;800&display=swap');
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "figtree",sans-serif;
 }
 body {
   background-color: #dcf2f1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
+  font-family: "figtree", sans-serif;
 }
 .card {
   width: 90%;
   max-width: 450px;
-  background: linear-gradient(120deg,#7FC7D9,#567dc1,#3081D0);
+  background: linear-gradient(120deg, #7fc7d9, #567dc1, #3081d0);
   text-align: center;
   padding: 40px 20px;
   border-radius: 20px;
   color: white;
 }
 .search {
-    width:100%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .search input {
-    height: 50px;
-    border: 0;
-    outline:0;
-    flex: 1;
-    margin-right: 15px;
-    border-radius: 30px;
-    padding: 10px 25px;
-    font-size: 18px;
-    /* padding: 5p; */
-
+  height: 50px;
+  border: 0;
+  outline: 0;
+  flex: 1;
+  margin-right: 15px;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 18px;
+  /* padding: 5p; */
 }
 button {
-    background: transparent;
-    border: 0;
-    outline: 0;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background-color: #EEF5FF;
-    text-align: center;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #eef5ff;
+  text-align: center;
 }
-button img{
-    width: 18px;
+button img {
+  width: 18px;
 }
-.weather_details{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    align-items: center;
+.weather_details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: center;
+}
+.weather_details img {
+  width: 60px;
+  padding: 10px;
+}
 
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.weather_details img{
-    width: 60px;
-    padding: 10px;
+h1 {
+  font-size: 5em;
+  margin: 20px;
+  font-weight: 800;
+  color: #161a30;
 }
-
-.col{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h2 {
+  font-size: 5em;
 }
-h1{
-    font-size: 5em;
+h3 {
+  font-size: 2.5em;
 }
-h2{
-    font-size: 2.5em;
+.weather {
+  display: none;
 }
-.weather{
- display: none;
-}
-.error_message{
-    visibility: hidden;
-    text-align: start;
-    padding: 15px;
-   
-
+.error_message {
+  visibility: hidden;
+  text-align: start;
+  padding: 15px;
 }

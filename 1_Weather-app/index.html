@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+      <h1>Weather App</h1>
     <div class="card">
-        <div class="search">
-            <input class="city_input" type="text" placeholder="Enter City Name" spellcheck="false">
-            <button onclick="getData()"><img src="images/search.png" alt=""></button>
-
-        </div>
-        <div class="error">
-            <p class="error_message">City Not Found</p>
-        </div>
-        <div class="weather">
-            <img src="images/clear.png" alt="img" class="weather_icon">
-            <h1 class="city_temp">0°C</h1>
-            <h2 class="city_name">City Name</h2>
-            <div class="weather_details">
-                <div class="col"><img src="images/humidity.png" alt=""><div class="humidity_">
-                    <p>Humidity</p>
-                    <p class="humidity">0%</p>
-                </div></div>
-                <div class="col"><img src="images/wind.png" alt=""><div class="wind_">
-                    <p>Wind</p>
-                    <p class="wind">1kph</p>
-                </div></div>
-    
-               
+      <div class="search">
+        <input
+          class="city_input"
+          type="text"
+          placeholder="Enter City Name"
+          spellcheck="false"
+        />
+        <button onclick="getData()">
+          <img src="images/search.png" alt="" />
+        </button>
+      </div>
+      <div class="error">
+        <p class="error_message">City Not Found</p>
+      </div>
+      <div class="weather">
+        <img src="images/clear.png" alt="img" class="weather_icon" />
+        <h2 class="city_temp">0°C</h2>
+        <h3 class="city_name">City Name</h3>
+        <div class="weather_details">
+          <div class="col">
+            <img src="images/humidity.png" alt="" />
+            <div class="humidity_">
+              <p>Humidity</p>
+              <p class="humidity">0%</p>
             </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" alt="" />
+            <div class="wind_">
+              <p>Wind</p>
+              <p class="wind">1kph</p>
+            </div>
+          </div>
         </div>
-        
+      </div>
     </div>
     <script src="script/script.js"></script>
-</body>
+  </body>
 </html>
