@@ -71,7 +71,7 @@ button img {
   justify-content: center;
 }
 h1 {
-  font-size: 5em;
+  font-size: 3em;
   margin: 20px;
   font-weight: 800;
   color: #161a30;
@@ -93,7 +93,7 @@ h3 {
 /* Media Queries */
 @media screen and (max-width:500px) {
     h1{
-        font-size: 3em;
+        font-size: 2em;
 
     }
     .search input{
