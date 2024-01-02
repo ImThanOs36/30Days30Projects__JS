@@ -2,6 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 body {
   background-color: #dcf2f1;
@@ -13,6 +14,7 @@ body {
   font-family: "figtree", sans-serif;
  
 }
+
 .card {
   width: 90%;
   max-width: 450px;
@@ -87,4 +89,15 @@ h3 {
   visibility: hidden;
   text-align: start;
   padding: 15px;
+}
+/* Media Queries */
+@media screen and (max-width:500px) {
+    h1{
+        font-size: 3em;
+
+    }
+    .search input{
+        width: 90%;
+    }
+    
 }
