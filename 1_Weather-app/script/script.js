@@ -1,10 +1,10 @@
 const URL = `https://api.openweathermap.org/data/2.5/weather?q=`;
-const apiKey = "28ae0a8507ba9b8cf20ace9fc79e9d79";
+
 let weatherIcon = document.querySelector(".weather_icon");
 let errorMessage = document.querySelector(".error_message");
 
 async function checkWeather(city) {
-  let response = await fetch(URL + city + `&appid=${apiKey}` + "&units=metric");
+  let response = await fetch(URL + city + `&appid=${process.env.weatherApiKey}` + "&units=metric");
   let data = await response.json();
   if (response.status == 404 || response.status == 400) {
     errorMessage.style.visibility = "visible";
