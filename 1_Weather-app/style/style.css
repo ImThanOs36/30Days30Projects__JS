@@ -71,7 +71,7 @@ button img {
   justify-content: center;
 }
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   margin: 20px;
   font-weight: 800;
   color: #161a30;
@@ -89,6 +89,9 @@ h3 {
   visibility: hidden;
   text-align: start;
   padding: 15px;
+}
+.weather_icon{
+  width: 100px;
 }
 /* Media Queries */
 @media screen and (max-width:500px) {
